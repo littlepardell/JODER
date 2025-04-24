@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import { useAuth } from "@/components/auth-provider"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { HabitTracker } from "@/components/habit-tracker"
-import UserProfile from "@/components/user-profile"; // Cambia '../../components/user-profile' a '@/components/user-profile'
+import UserProfile from "@/components/user-profile"; // Asegúrate de que esta ruta sea correcta
 import { SyncDashboard } from "@/components/sync-dashboard"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
