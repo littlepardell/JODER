@@ -49,7 +49,7 @@ export type Note = {
   content: string
 }
 
-export default function HabitTracker() {
+export function HabitTracker() {
   // Set dark theme
   const { setTheme } = useTheme()
   useEffect(() => {

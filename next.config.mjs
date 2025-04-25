@@ -16,10 +16,14 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  output: 'standalone',
+  poweredByHeader: false,
+  compress: true,
+  reactStrictMode: true,
+  swcMinify: true,
   experimental: {
+    optimizeCss: true,
     webpackBuildWorker: true,
-    parallelServerBuildTraces: true,
-    parallelServerCompiles: true,
   },
 }
 
