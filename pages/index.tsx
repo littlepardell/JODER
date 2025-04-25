@@ -1,1 +1,0 @@
-// Eliminar este archivo para evitar conflictos con app/page.tsx
