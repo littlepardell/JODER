@@ -1,1 +1,1 @@
-import HabitTracker from '@/components/habit-tracker'
+// Eliminar este archivo para evitar conflictos con app/page.tsx
