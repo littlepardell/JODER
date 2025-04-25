@@ -1,0 +1,1 @@
+import HabitTracker from '@/components/habit-tracker'
