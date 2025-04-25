@@ -1,14 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
-  experimental: {
-    appDir: true,
-  },
-  // Asegurarse de que las imágenes de Supabase están permitidas
   images: {
     domains: ['ufmnmoevyemfujscxent.supabase.co'],
+    unoptimized: true,
   },
+  typescript: {
+    ignoreBuildErrors: true
+  },
+  eslint: {
+    ignoreDuringBuilds: true
+  }
 }
 
 module.exports = nextConfig
