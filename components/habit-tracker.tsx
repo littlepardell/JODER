@@ -574,3 +574,5 @@ export function HabitTracker() {
   )
 }
 
+export { HabitTracker as default }
+
