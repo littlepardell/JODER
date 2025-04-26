@@ -18,20 +18,17 @@ export function createSupabaseClient() {
 
 // Función para obtener la URL de redirección para OAuth
 export function getRedirectUrl() {
-  // Primero intentamos usar la variable de entorno NEXT_PUBLIC_SITE_URL
+  // Primero usamos la variable de entorno definida en Vercel
   if (process.env.NEXT_PUBLIC_SITE_URL) {
     return `${process.env.NEXT_PUBLIC_SITE_URL}/auth/callback`
   }
-
-  // Si no está disponible, intentamos usar la URL del cliente actual
+  // Asegurarnos de que este código se ejecute solo en el cliente
   if (typeof window !== "undefined") {
-    const protocol = window.location.protocol
-    const host = window.location.host
+    const { protocol, host } = window.location
     return `${protocol}//${host}/auth/callback`
   }
-
-  // Si nada funciona, devolvemos null
-  return null
+  // Para SSR, devolver una cadena vacía o un valor por defecto adecuado
+  return ""
 }
 
 // Función para depurar problemas de autenticación
